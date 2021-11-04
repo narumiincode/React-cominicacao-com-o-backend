@@ -7,6 +7,8 @@ import Login from './paginas/login/Login';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import ListaTema from './components/temas/listatema/ListaTema';
+import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 
 
 function App() {
@@ -30,6 +32,14 @@ function App() {
 
             <Route path='/cadastrousuario'>
               <CadastroUsuario/>
+            </Route>
+
+            <Route path='/temas'>
+              <ListaTema/>
+            </Route>
+
+            <Route path='/postagens'>
+              <ListaPostagem/>
             </Route>
           </div>
         </Switch>
