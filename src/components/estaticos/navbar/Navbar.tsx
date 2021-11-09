@@ -12,7 +12,7 @@ function Navbar() {
     function goLogout(){
         setToken('')
         alert("Usuário deslogado")
-        history.push('/login')
+        history.push('/logar')
     }
     return (
         <>
@@ -32,7 +32,7 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Link to="/postagens" className="text-decorator-none">
+                        <Link to="/postagem" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
                                     postagens
@@ -46,7 +46,7 @@ function Navbar() {
                             </Typography>
                         </Box>
                         </Link>
-                        <Link to="/cadastrarTema" className="text-decorator-none">
+                        <Link to="/formulariotemas" className="text-decorator-none">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 cadastrar tema

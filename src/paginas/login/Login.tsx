@@ -11,7 +11,8 @@ function Login() {
     const [token, setToken] = useLocalStorage('token');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
-            id: 0,
+            id: 0, 
+            nome: '',
             usuario: '',
             senha: '',
             token: ''
